@@ -6,3 +6,4 @@ pandas
 pre-commit
 ruff
 pyvis
+holoviews
