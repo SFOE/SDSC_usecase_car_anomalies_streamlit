@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ofen_uc2
+Version: 0.1.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy~=1.24
+Requires-Dist: pandas~=2.0
+
+# OFEN UC2
+
+Dieses Projekt analysiert die Daten welche zu den CO2-Emissionsvorschriften für Fahrzeuge gesammelt werden.
+
+Der Vollzug der CO2-Emissionsvorschriften bedarf einem umfangreichen Monitoring um die Massnahme zu überprüfen und allfällige Anomalien zu identifizieren. Das Projekt «Anomalien – Fahrzeugdatenbank» unterstützt die Sektion EV beim Monitoring der Massnahme.
+
+1) Einerseits wurde eine Art «Alert-System» implementiert, welches über Anomalien in den Zeitreihen der Daten warnt.
+2) Zweitens werden die Import/Export Flüsse zwischen Autohändler visualisiert.
+
+Das Tool ist ein Dashboard, mit drei Seiten:
+
+1. Home-Seite: Einführung in das Dashboard und Navigation zu den zwei Themen.
+
+![Alt text](results/Dashboard_Home.png)
+
+2. Anomalien "Alert-System": Leistendiagramm zum jährlichen prozentualen Unterschied und den gefilterten Datensatz.
+
+![Alt text](results/Dashboard_Anomalien.png)
+
+3. Fahrzeughandel: Graph welcher die Import und Export Beziehungen der Fahrzeughändler darstellt und den dazugehörigen Datensatz.
+
+![Alt text](results/Dashboard_Fahrzeughandel.png)
+
+# 1) Programm installieren
+
+Installieren Sie die festgelegten Entwicklungsabhängigkeiten mit:
+
+```
+pip install -r requirements.txt
+```
+
+Falls Sie Conda zur Verwaltung Ihrer Python-Umgebungen verwenden:
+
+```
+conda env create -f environment.yml
+```
+
+Alternativ können Sie das Modul in [editierbarem Modus](https://setuptools.pypa.io/en/latest/userguide/development_mode.html) installieren, wenn Sie eine bestehende Umgebung verwenden. Dies umfasst nur minimale Abhängigkeiten:
+
+```
+pip install -e .
+```
+
+# 2) Programm ausführen
+
+Das Tool ist als Dashboard mit `streamlit` aufgebaut.
+
+Gestartet wird das Dashboard mit folgendem `bash` Befehl:
+
+```bash
+streamlit run src/ofen_uc2/dashboard/Home.py
+```

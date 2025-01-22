@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/ofen_uc2/__init__.py
+src/ofen_uc2/config.py
+src/ofen_uc2.egg-info/PKG-INFO
+src/ofen_uc2.egg-info/SOURCES.txt
+src/ofen_uc2.egg-info/dependency_links.txt
+src/ofen_uc2.egg-info/requires.txt
+src/ofen_uc2.egg-info/top_level.txt
+src/ofen_uc2/dashboard/Home.py
+src/ofen_uc2/dashboard/config.py
+src/ofen_uc2/dashboard/pages/Anomalien.py
+src/ofen_uc2/dashboard/pages/Fahrzeughandel.py
+src/ofen_uc2/data/anomalies.py
+src/ofen_uc2/data/transactions.py
+src/ofen_uc2/visualisations/anomalies.py
+src/ofen_uc2/visualisations/transactions.py
