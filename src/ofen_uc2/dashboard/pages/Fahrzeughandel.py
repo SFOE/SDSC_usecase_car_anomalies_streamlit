@@ -23,7 +23,7 @@ st.divider()
 st.subheader("Grafik")
 
 if not os.path.exists(PATH_TRANSACTION_VIZ):
-    create_visualisation(data=TRANSACTIONS_DF, out_file=PATH_TRANSACTION_VIZ)
+    create_visualisation(df=TRANSACTIONS_DF, out_file=PATH_TRANSACTION_VIZ)
 
 content = open(PATH_TRANSACTION_VIZ, "r").read()
 components.html(content, width=1400, height=600)
