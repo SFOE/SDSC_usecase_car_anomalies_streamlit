@@ -3,12 +3,12 @@ import pandas as pd
 from ofen_uc2.config import RAW_DATA_DIR, PREPARED_DATA_DIR
 
 def prepare_data(
-    in_file: str = RAW_DATA_DIR / "Testdaten_Einzelfahrzeugdaten_Q3_2024_LNF_extern.xlsx",
+    in_file: str = RAW_DATA_DIR / "Testdaten_Einzelfahrzeugdaten_Q3_2024_LNF_extern_V2.xlsx",
     out_file: str = PREPARED_DATA_DIR / "transactions.csv"
 ):
     """Daten vorbereiten.
 
-    :param in_file: Input CSV Datei, defaults to RAW_DATA_DIR/"Testdaten_Einzelfahrzeugdaten_Q3_2024_LNF_extern.xlsx"
+    :param in_file: Input CSV Datei, defaults to RAW_DATA_DIR/"Testdaten_Einzelfahrzeugdaten_Q3_2024_LNF_extern_V2.xlsx"
     :param out_file: Wo Ergebnisse gespeichert werden sollen, defaults to PREPARED_DATA_DIR/"transactions.csv"
     """
 
